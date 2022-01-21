@@ -32,6 +32,12 @@ async def help(ctx):
     await ctx.send(embed=embed)
 
 
+@bot.command()
+async def stopautoOwO(ctx):
+    await ctx.message.delete()
+    await ctx.send('auto OwO Magi is now **disabled**!')
+    global dmcs
+    dmcs = False
 
 @bot.command(pass_context=True)
 async def autoOwO(ctx):
@@ -1272,14 +1278,6 @@ async def autoOwO(ctx):
             await ctx.send('owo cash')
             print(f"{Fore.RED}Succesfully sent owo cash")
             await asyncio.sleep(7200)
-            
-@bot.command()
-async def stopautoOwO(ctx):
-    await ctx.message.delete()
-    await ctx.send('auto OwO Magi is now **disabled**!')
-    global dmcs
-    dmcs = False
-
 
 keep_alive()
 bot.run(os.getenv('token'), bot=False)
