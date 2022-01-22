@@ -29,9 +29,12 @@ async def help(ctx):
         "https://c.tenor.com/LDuF2jVabwoAAAAS/banner-welcome.gif"
     )
     await ctx.send(embed=embed)
-    await asyncio.sleep(5)
-    await ctx.message.delete()
 
+
+@bot.command()
+async def help(ctx):
+    await ctx.message.delete()
+    await ctx.send('**$$AutoOwO= owoh, owo b, owo sell all, owo flip 600. $$stopautoOwO= Stops the bot. bybasses ban**')
 
 @bot.command()
 async def stopautoOwO(ctx):
