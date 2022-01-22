@@ -16,19 +16,7 @@ bot = commands.Bot(command_prefix=prefix,
                    self_bot=True)
 
 
-@bot.command()
-async def help(ctx):
-    embed = discord.Embed(
-        title="Help AutoOwO",
-        color=435436,
-        description=
-        f"{prefix}**autoOwO**\nowoh, owo sell all, owo flip 500 and owo cash.\n\n**{prefix}stopautoOwO**\n It bypasses ban completely"
-    )
-    embed.set_thumbnail(
-        url=
-        "https://c.tenor.com/LDuF2jVabwoAAAAS/banner-welcome.gif"
-    )
-    await ctx.send(embed=embed)
+
 
 
 @bot.command()
