@@ -20,7 +20,7 @@ bot = commands.Bot(command_prefix=prefix,
 
 
 @bot.command()
-async def help(ctx):
+async def helpowo(ctx):
     await asyncio.sleep(2)
     await ctx.message.delete()
     await ctx.send('**$$AutoOwO= owoh, owo b, owo sell all, owo flip 600. $$stopautoOwO= Stops the bot. bybasses ban**')
