@@ -33,7 +33,7 @@ async def helpowo(ctx):
 async def stopautoOwO(ctx):
     await ctx.message.delete()
     await ctx.send('**AutoOwO is now Disabled 😊**')
-    glowo bal dmcs
+    global dmcs
     dmcs = False
 
 
@@ -41,7 +41,7 @@ async def stopautoOwO(ctx):
 async def autoOwO(ctx):
     await ctx.message.delete()
     await ctx.send('**AutoOwO is now enabled enjoy 😊**')
-    glowo bal dmcs
+    global dmcs
     dmcs = True
     while dmcs:
         async with ctx.typing():
