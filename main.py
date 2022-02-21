@@ -30,6 +30,12 @@ async def helpowo(ctx):
     await ctx.send('**$$AutoOwO= owowo h, owo b, owo sell all, owo flip 600. $$stopautoOwO= Stops the bot. bybasses ban**')
 
 @bot.command()
+async def help(ctx):
+    await asyncio.sleep(1)
+    await ctx.message.delete()
+    await ctx.send('**$$AutoOwO= owowo h, owo b, owo sell all, owo flip 600. $$stopautoOwO= Stops the bot. bybasses ban**')
+
+@bot.command()
 async def stopautoOwO(ctx):
     await ctx.message.delete()
     await ctx.send('**AutoOwO is now Disabled 😊**')
